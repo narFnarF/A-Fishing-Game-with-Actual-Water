@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-4-1 comment="false" x="26" y="40">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-4-1>
+            </group>
+            <int id="0" val="gameover"/>
+        </event-custom>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <set-val-4-3 comment="false" x="37" y="65">
+                            <div comment="false" id="0" x="0" y="0">
+                                <random comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </div>
+                        </set-val-4-3>
+                        <create-actor3 comment="false" x="37" y="95">
+                            <ACTORTYPE eid="2" id="0"/>
+                            <times comment="false" id="1" x="0" y="0">
+                                <get-val-4-3 comment="false" id="0" x="0" y="0"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </scene-wh>
+                                    <int id="1" val="30"/>
+                                </minus>
+                            </times>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-4-3 comment="false" x="37" y="145">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-4-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0.5"/>
+                            </plus>
+                        </set-val-4-3>
+                        <create-actor3 comment="false" x="37" y="175">
+                            <ACTORTYPE eid="2" id="0"/>
+                            <times comment="false" id="1" x="0" y="0">
+                                <get-val-4-3 comment="false" id="0" x="0" y="0"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </scene-wh>
+                                    <int id="1" val="30"/>
+                                </minus>
+                            </times>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                    </group>
+                    <get-val-4-1 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <set-val-4-2 comment="false" x="26" y="237">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <div comment="false" id="0" x="0" y="0">
+                            <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                <int id="0" val="timer scene behav"/>
+                                <int id="1" val="_timer"/>
+                            </scene-get-attribute>
+                            <int id="1" val="60"/>
+                        </div>
+                        <int id="1" val="0.1"/>
+                    </plus>
+                </set-val-4-2>
+                <print comment="true" x="26" y="272">
+                    <get-val-4-2 comment="true" id="0" x="0" y="0"/>
+                </print>
+                <dolater comment="false" x="26" y="297">
+                    <group eventID="3" id="-1">
+                        <scene-say comment="false" x="37" y="329">
+                            <int id="0" val="spawn poissons"/>
+                            <int id="1" val="timerInterval"/>
+                        </scene-say>
+                    </group>
+                    <get-val-4-2 comment="false" id="0" x="0" y="0"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="timerInterval"/>
+        </event-custom>
+    </group>
+    <group eventID="3" id="1">
+        <print comment="false" x="426" y="550">
+            <randint comment="false" id="0" x="0" y="0">
+                <int id="0" val="0"/>
+                <int id="1" val="0,5"/>
+            </randint>
+        </print>
+    </group>
+    <group eventID="3" id="-1">
+        <scene-wh comment="false" x="611" y="313">
+            <int id="0" val="0"/>
+        </scene-wh>
+        <randint comment="false" x="228" y="662">
+            <int id="0" val="0.5"/>
+            <int id="1" val="1"/>
+        </randint>
+        <randint comment="false" x="208" y="421">
+            <int id="0" val="0"/>
+            <int id="1" val="0.5"/>
+        </randint>
+        <div comment="false" x="136" y="497">
+            <random comment="false" id="0" x="0" y="0"/>
+            <int id="1" val="2"/>
+        </div>
+        <times comment="false" x="532" y="445">
+            <int id="0" val=""/>
+            <scene-wh comment="false" id="1" x="0" y="0">
+                <int id="0" val="0"/>
+            </scene-wh>
+        </times>
+    </group>
+    <group eventID="4" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <dolater comment="false" x="26" y="40">
+                    <group eventID="4" id="-1">
+                        <scene-say comment="false" x="37" y="67">
+                            <int id="0" val="spawn poissons"/>
+                            <int id="1" val="timerInterval"/>
+                        </scene-say>
+                        <set-val-4-1 comment="false" x="37" y="87">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-4-1>
+                    </group>
+                    <int id="0" val="0.5"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="1">
+        <print comment="false" x="332" y="300">
+            <int id="0" val="trigger****"/>
+        </print>
+    </group>
+    <group eventID="4" id="2">
+        <scene-say comment="true" x="342" y="232">
+            <int id="0" val="spawn poissons"/>
+            <int id="1" val="timerInterval"/>
+        </scene-say>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

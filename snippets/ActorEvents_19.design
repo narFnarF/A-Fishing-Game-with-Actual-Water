@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <set-color comment="false" x="37" y="65">
+                            <color b="0" g="200" id="0" r="255"/>
+                        </set-color>
+                        <draw-text comment="false" x="37" y="92">
+                            <int id="0" val="Nouveau High score d&amp;#039;equipe!!!"/>
+                            <int id="1" val="0"/>
+                            <times comment="false" id="2" x="0" y="0">
+                                <get-font-height comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="-1"/>
+                            </times>
+                        </draw-text>
+                    </group>
+                    <get-val-16-2 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else-if comment="false" x="26" y="134">
+                    <group eventID="1" id="-1">
+                        <set-color comment="false" x="37" y="159">
+                            <color b="0" g="200" id="0" r="255"/>
+                        </set-color>
+                        <draw-text comment="false" x="37" y="186">
+                            <int id="0" val="Nouveau High score de joueur!"/>
+                            <int id="1" val="0"/>
+                            <times comment="false" id="2" x="0" y="0">
+                                <get-font-height comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="-1"/>
+                            </times>
+                        </draw-text>
+                    </group>
+                    <get-val-16-1 comment="false" id="0" x="0" y="0"/>
+                </else-if>
+                <set-color comment="false" x="26" y="228">
+                    <color b="0" g="0" id="0" r="0"/>
+                </set-color>
+                <draw-text comment="false" x="26" y="255">
+                    <int id="0" val="Table de High Score:"/>
+                    <int id="1" val="0"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="285">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Meilleur joueur: "/>
+                        <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <int id="1" val="0"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="315">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Meilleure equipe: "/>
+                        <get-game-val-4 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <int id="1" val="0"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </times>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <dolater comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="67">
+                            <group eventID="2" id="-1">
+                                <set-game-val-3 comment="false" x="48" y="97">
+                                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-3>
+                                <set-val-16-1 comment="false" x="48" y="122">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-16-1>
+                                <say comment="false" x="48" y="147">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Enhanced Particle System"/>
+                                    <int id="2" val="StartEmitting"/>
+                                </say>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            </more>
+                        </if>
+                        <if comment="false" x="37" y="186">
+                            <group eventID="2" id="-1">
+                                <set-game-val-3 comment="false" x="48" y="216">
+                                    <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-3>
+                                <set-val-16-1 comment="false" x="48" y="241">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-16-1>
+                                <say comment="false" x="48" y="266">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Enhanced Particle System"/>
+                                    <int id="2" val="StartEmitting"/>
+                                </say>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                                <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                            </more>
+                        </if>
+                        <if comment="false" x="37" y="305">
+                            <group eventID="2" id="-1">
+                                <set-game-val-4 comment="false" x="48" y="335">
+                                    <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-4>
+                                <set-val-16-2 comment="false" x="48" y="360">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-16-2>
+                                <say comment="false" x="48" y="385">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Enhanced Particle System"/>
+                                    <int id="2" val="StartEmitting"/>
+                                </say>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                                <get-game-val-4 comment="false" id="1" x="0" y="0"/>
+                            </more>
+                        </if>
+                        <save-game comment="false" x="37" y="424">
+                            <group eventID="2" id="-1">
+                                <print comment="false" x="48" y="449">
+                                    <str-combine comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="************** Saving successful? : "/>
+                                        <tostring comment="false" id="1" x="0" y="0">
+                                            <save-success comment="false" id="0" x="0" y="0"/>
+                                        </tostring>
+                                    </str-combine>
+                                </print>
+                            </group>
+                        </save-game>
+                    </group>
+                    <int id="0" val="0.1"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <print comment="false" x="471" y="294">
+            <int id="0" val="toto"/>
+        </print>
+    </group>
+    <group eventID="3" id="1">
+        <event-att-bool comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <print comment="false" x="26" y="47">
+                    <int id="0" val="toto"/>
+                </print>
+                <say comment="false" x="26" y="67">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Enhanced Particle System"/>
+                    <int id="2" val="StartEmitting"/>
+                </say>
+            </group>
+            <int id="0" val="1"/>
+            <true comment="false" id="1" x="0" y="0"/>
+        </event-att-bool>
+    </group>
+    <group eventID="3" id="2">
+        <custom-12 comment="false" x="146" y="233">
+            <ACTOR eid="this" id="0"/>
+            <ACTORTYPE id="1"/>
+            <int id="2" val=""/>
+            <int id="3" val=""/>
+            <int id="4" val=""/>
+            <int id="5" val=""/>
+            <int id="6" val=""/>
+            <int id="7" val=""/>
+            <int id="8" val=""/>
+        </custom-12>
+    </group>
+    <group eventID="3" id="3">
+        <scene-say comment="false" x="76" y="309">
+            <int id="0" val="Enhanced Particle System"/>
+            <int id="1" val="StartEmitting"/>
+        </scene-say>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-att-bool comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <print comment="false" x="26" y="47">
+                    <int id="0" val="toto"/>
+                </print>
+                <say comment="false" x="26" y="67">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Enhanced Particle System"/>
+                    <int id="2" val="StartEmitting"/>
+                </say>
+            </group>
+            <int id="0" val="2"/>
+            <true comment="false" id="1" x="0" y="0"/>
+        </event-att-bool>
+    </group>
+    <group eventID="4" id="1">
+        <scene-say comment="false" x="86" y="307">
+            <int id="0" val="Enhanced Particle System"/>
+            <int id="1" val="StartEmitting"/>
+        </scene-say>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

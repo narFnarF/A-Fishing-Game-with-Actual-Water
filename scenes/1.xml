@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="13" extheight="672" extwidth="864" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="608" id="1" name="High score list" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="800">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="255" green="255" red="255"/>
+    <backgrounds/>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="true" group="2" id="4" name="scorebox 1" sx="1.0" sy="1.0" x="138" y="128" z="0">
+            <snippets>
+                <s enabled="true" id="6">
+                    <prop id="1" list="0" val="Px"/>
+                    <prop id="2" list="0" val="0"/>
+                </s>
+                <s enabled="true" id="7">
+                    <prop id="2" list="0" val="P1"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="2" c="true" group="2" id="4" name="scorebox 2" sx="1.0" sy="1.0" x="599" y="130" z="0">
+            <snippets>
+                <s enabled="true" id="6">
+                    <prop id="1" list="0" val="Px"/>
+                    <prop id="2" list="0" val="0"/>
+                </s>
+                <s enabled="true" id="7">
+                    <prop id="2" list="0" val="P2"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="3" c="true" group="2" id="4" name="scorebox 3" sx="1.0" sy="1.0" x="332" y="44" z="0">
+            <snippets>
+                <s enabled="true" id="6">
+                    <prop id="1" list="0" val="Px"/>
+                    <prop id="2" list="0" val="0"/>
+                </s>
+                <s enabled="true" id="7">
+                    <prop id="2" list="0" val="Pt"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="4" c="false" group="2" id="17" name="gagnant 4" sx="1.0" sy="1.0" x="1" y="205" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="2" id="17" name="gagnant 5" sx="1.0" sy="1.0" x="459" y="206" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="19" name="High Score display 6" sx="1.0" sy="1.0" x="265" y="412" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="21" name="reset scores 7" sx="0.2392638" sy="0.4516129" x="523" y="559" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+</scene>

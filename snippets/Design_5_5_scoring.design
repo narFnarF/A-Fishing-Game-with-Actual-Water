@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="4" id="0">
+        <receiver-2-7 comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="3" id="-1">
+                        <set-val-5-1 comment="false" x="37" y="83">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-5-1 comment="false" id="0" x="0" y="0"/>
+                                <get-byobval-5-7-1 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-val-5-1>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-byobval-5-7-0 comment="false" id="0" x="0" y="0"/>
+                        <pick-group comment="false" id="1" x="0" y="0">
+                            <int id="0" val="4"/>
+                        </pick-group>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="125">
+                    <group eventID="3" id="-1">
+                        <set-val-5-2 comment="false" x="37" y="145">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-5-2 comment="false" id="0" x="0" y="0"/>
+                                <get-byobval-5-7-1 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-val-5-2>
+                    </group>
+                </else>
+                <set-val-5-3 comment="false" x="26" y="187">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-5-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-val-5-3>
+            </group>
+            <get-byobval-5-7-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-5-7-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-2-7>
+    </group>
+    <group eventID="4" id="1">
+        <print comment="false" x="416" y="150">
+            <int id="0" val="fonction est call‚àö¬©"/>
+        </print>
+    </group>
+    <group eventID="4" id="2">
+        <print comment="false" x="483" y="255">
+            <int id="0" val="p2 score"/>
+        </print>
+    </group>
+    <group eventID="4" id="3">
+        <print comment="false" x="59" y="313">
+            <int id="0" val="p1 score"/>
+        </print>
+    </group>
+    <group eventID="4" id="-1">
+        <getatype comment="false" x="196" y="282">
+            <ACTOR eid="lastcreated" id="0"/>
+        </getatype>
+        <pick-type comment="false" x="460" y="325">
+            <ACTORTYPE id="0"/>
+        </pick-type>
+    </group>
+    <group eventID="5" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-game-val-0 comment="false" x="26" y="40">
+                    <get-val-5-1 comment="false" id="0" x="0" y="0"/>
+                </set-game-val-0>
+                <set-game-val-1 comment="false" x="26" y="65">
+                    <get-val-5-2 comment="false" id="0" x="0" y="0"/>
+                </set-game-val-1>
+                <set-game-val-2 comment="false" x="26" y="90">
+                    <get-val-5-3 comment="false" id="0" x="0" y="0"/>
+                </set-game-val-2>
+            </group>
+            <int id="0" val="gameover"/>
+        </event-custom>
+    </group>
+    <group eventID="5" id="1">
+        <print comment="false" x="193" y="283">
+            <int id="0" val="call event*******************************"/>
+        </print>
+    </group>
+    <group eventID="5" id="-1"/>
+</groups>

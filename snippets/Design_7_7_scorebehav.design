@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <set-font-new comment="false" x="37" y="70">
+                            <FONT eid="8" id="0"/>
+                        </set-font-new>
+                        <set-font-color comment="false" x="37" y="97">
+                            <color b="51" g="0" id="0" r="255"/>
+                        </set-font-color>
+                        <draw-text comment="false" x="37" y="124">
+                            <int id="0" val="P1"/>
+                            <int id="1" val="0"/>
+                            <neg comment="false" id="2" x="0" y="0">
+                                <get-font-height comment="false" id="0" x="0" y="0"/>
+                            </neg>
+                        </draw-text>
+                        <set-font-new comment="false" x="37" y="154">
+                            <FONT eid="9" id="0"/>
+                        </set-font-new>
+                        <if comment="false" x="37" y="181">
+                            <group eventID="2" id="-1">
+                                <draw-text comment="false" x="48" y="211">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="score scene behav"/>
+                                        <int id="1" val="_P1score"/>
+                                    </scene-get-attribute>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </draw-text>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <scenename comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="scene principale"/>
+                            </eq>
+                        </if>
+                        <else comment="false" x="37" y="248">
+                            <group eventID="2" id="-1">
+                                <draw-text comment="false" x="48" y="268">
+                                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </draw-text>
+                            </group>
+                        </else>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="P1"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="26" y="317">
+                    <group eventID="2" id="-1">
+                        <set-font-new comment="false" x="37" y="347">
+                            <FONT eid="8" id="0"/>
+                        </set-font-new>
+                        <set-font-color comment="false" x="37" y="374">
+                            <color b="255" g="51" id="0" r="51"/>
+                        </set-font-color>
+                        <draw-text comment="false" x="37" y="401">
+                            <int id="0" val="P2"/>
+                            <int id="1" val="0"/>
+                            <neg comment="false" id="2" x="0" y="0">
+                                <get-font-height comment="false" id="0" x="0" y="0"/>
+                            </neg>
+                        </draw-text>
+                        <set-font-new comment="false" x="37" y="431">
+                            <FONT eid="9" id="0"/>
+                        </set-font-new>
+                        <if comment="false" x="37" y="458">
+                            <group eventID="2" id="-1">
+                                <draw-text comment="false" x="48" y="488">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="score scene behav"/>
+                                        <int id="1" val="_P2score"/>
+                                    </scene-get-attribute>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </draw-text>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <scenename comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="scene principale"/>
+                            </eq>
+                        </if>
+                        <else comment="false" x="37" y="525">
+                            <group eventID="2" id="-1">
+                                <draw-text comment="false" x="48" y="545">
+                                    <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </draw-text>
+                            </group>
+                        </else>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="P2"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="594">
+                    <group eventID="2" id="-1">
+                        <set-font-new comment="false" x="37" y="624">
+                            <FONT eid="8" id="0"/>
+                        </set-font-new>
+                        <set-font-color comment="false" x="37" y="651">
+                            <color b="0" g="0" id="0" r="0"/>
+                        </set-font-color>
+                        <draw-text comment="false" x="37" y="678">
+                            <int id="0" val="Score d&amp;#039;equipe: "/>
+                            <int id="1" val="0"/>
+                            <neg comment="false" id="2" x="0" y="0">
+                                <get-font-height comment="false" id="0" x="0" y="0"/>
+                            </neg>
+                        </draw-text>
+                        <set-font-new comment="false" x="37" y="708">
+                            <FONT eid="9" id="0"/>
+                        </set-font-new>
+                        <if comment="false" x="37" y="735">
+                            <group eventID="2" id="-1">
+                                <draw-text comment="false" x="48" y="765">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="score scene behav"/>
+                                        <int id="1" val="_scoretotal"/>
+                                    </scene-get-attribute>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </draw-text>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <scenename comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="scene principale"/>
+                            </eq>
+                        </if>
+                        <else comment="false" x="37" y="802">
+                            <group eventID="2" id="-1">
+                                <draw-text comment="false" x="48" y="822">
+                                    <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </draw-text>
+                            </group>
+                        </else>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Pt"/>
+                    </eq>
+                </else-if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

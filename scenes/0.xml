@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="0" extheight="672" extwidth="864" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="85.0" height="608" id="0" name="scene principale" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="800">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="255" green="255" red="204"/>
+    <backgrounds/>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="true" group="3" id="0" name="fleche 1" sx="1.0" sy="1.0" x="-16" y="470" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="2">
+                    <prop id="1" list="0" val="p1 gauche"/>
+                    <prop id="2" list="0" val="left"/>
+                    <prop id="3" list="0" val="4"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="2" c="true" group="3" id="0" name="fleche 2" sx="1.0" sy="1.0" x="124" y="418" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="2">
+                    <prop id="1" list="0" val="p1 haut"/>
+                    <prop id="2" list="0" val="up"/>
+                    <prop id="3" list="0" val="4"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="3" c="true" group="3" id="0" name="fleche 3" sx="1.0" sy="1.0" x="253" y="470" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="2">
+                    <prop id="1" list="0" val="p1 droite"/>
+                    <prop id="2" list="0" val="right"/>
+                    <prop id="3" list="0" val="4"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="4" c="true" group="3" id="0" name="fleche 4" sx="1.0" sy="1.0" x="659" y="472" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="2">
+                    <prop id="1" list="0" val="p2 droite"/>
+                    <prop id="2" list="0" val="mouse"/>
+                    <prop id="3" list="0" val="5"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="5" c="true" group="3" id="0" name="fleche 5" sx="1.0" sy="1.0" x="536" y="416" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="2">
+                    <prop id="1" list="0" val="p2 haut"/>
+                    <prop id="2" list="0" val="down"/>
+                    <prop id="3" list="0" val="5"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="6" c="true" group="3" id="0" name="fleche 6" sx="1.0" sy="1.0" x="399" y="471" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="2">
+                    <prop id="1" list="0" val="p2 gauche"/>
+                    <prop id="2" list="0" val="space"/>
+                    <prop id="3" list="0" val="5"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="7" c="true" group="2" id="4" name="score box 7" sx="1.0" sy="1.0" x="70" y="60" z="0">
+            <snippets>
+                <s enabled="true" id="6"/>
+                <s enabled="true" id="7">
+                    <prop id="2" list="0" val="P1"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="8" c="true" group="2" id="4" name="score box 8" sx="1.0" sy="1.0" x="724" y="66" z="0">
+            <snippets>
+                <s enabled="true" id="6"/>
+                <s enabled="true" id="7">
+                    <prop id="2" list="0" val="P2"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="9" c="true" group="2" id="4" name="score box 9" sx="1.0" sy="1.0" x="338" y="49" z="0">
+            <snippets>
+                <s enabled="true" id="6"/>
+                <s enabled="true" id="7">
+                    <prop id="2" list="0" val="Pt"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="10" c="false" group="2" id="10" name="timer 10" sx="1.0" sy="1.0" x="429" y="221" z="0"/>
+        <actor a="0.0" aid="11" c="false" group="2" id="15" name="game over text 11" sx="1.0" sy="1.0" x="209" y="225" z="0"/>
+    </actors>
+    <snippets>
+        <s enabled="false" id="19">
+            <prop id="1" list="0" val="true"/>
+            <prop id="2" list="0" val="1.0"/>
+            <prop id="3" list="0" val="0"/>
+            <prop id="4" list="0" val="2.0"/>
+            <prop id="5" list="0" val="0.0"/>
+            <prop id="6" list="0" val="0.0"/>
+            <prop id="7" list="0" val="true"/>
+            <prop id="8" list="0" val="true"/>
+            <prop id="9" list="0" val="0.0"/>
+            <prop id="10" list="0" val=""/>
+            <prop id="11" list="0" val="0.0"/>
+            <prop id="12" list="0" val="32.0"/>
+            <prop id="13" list="0" val="false"/>
+            <prop id="14" list="0" val="true"/>
+            <prop id="15" list="0" val="false"/>
+            <prop id="17" list="0" val="0.0"/>
+            <prop id="16" list="0" val="8.0"/>
+            <prop id="19" list="0" val="No Control"/>
+            <prop id="18" list="0" val="false"/>
+            <prop id="21" list="0" val="No Control"/>
+            <prop id="20" list="0" val="No Control"/>
+            <prop id="23" list="0" val="No Control"/>
+            <prop id="22" list="0" val="255,153,0,255"/>
+            <prop id="25" list="0" val="128,0,0,255"/>
+            <prop id="24" list="0" val="-1"/>
+            <prop id="27" list="0" val="0,128,0,255"/>
+            <prop id="26" list="0" val="128,0,0,255"/>
+            <prop id="28" list="0" val="0,0,128,255"/>
+        </s>
+        <s enabled="true" id="4">
+            <prop id="1" list="0" val="true"/>
+            <prop id="2" list="0" val="1"/>
+            <prop id="3" list="0" val="0"/>
+        </s>
+        <s enabled="true" id="5">
+            <prop id="1" list="0" val="0"/>
+            <prop id="2" list="0" val="0"/>
+            <prop id="3" list="0" val="0"/>
+        </s>
+        <s enabled="true" id="9">
+            <prop id="1" list="0" val="60"/>
+            <prop id="2" list="0" val="0.1"/>
+        </s>
+    </snippets>
+    <terrain/>
+</scene>

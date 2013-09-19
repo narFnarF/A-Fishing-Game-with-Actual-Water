@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <setanim comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-2-1 comment="false" id="1" x="0" y="0"/>
+                </setanim>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="1">
+        <set-val-2-2 comment="false" x="157" y="233">
+            <int id="0" val="0"/>
+        </set-val-2-2>
+    </group>
+    <group eventID="1" id="2">
+        <set-val-2-3 comment="false" x="37" y="145">
+            <GROUP eid="var" id="0" vid="3"/>
+        </set-val-2-3>
+    </group>
+    <group eventID="1" id="3">
+        <set-val-2-3 comment="false" x="54" y="307">
+            <GROUP eid="var" id="0" vid="3"/>
+        </set-val-2-3>
+    </group>
+    <group eventID="1" id="-1">
+        <get-val-2-3 comment="false" x="261" y="296"/>
+        <get-val-2-2 comment="false" x="345" y="325"/>
+    </group>
+    <group eventID="2" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <apply-filter comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <filter-hsb comment="false" id="1" x="0" y="0">
+                        <int id="0" val="-100"/>
+                    </filter-hsb>
+                </apply-filter>
+                <set-val-2-4 comment="false" x="26" y="74">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-2-4>
+                <dolater comment="false" x="26" y="99">
+                    <group eventID="2" id="-1">
+                        <set-val-2-4 comment="false" x="37" y="126">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-2-4>
+                        <clear-filter comment="false" x="37" y="151">
+                            <ACTOR eid="this" id="0"/>
+                        </clear-filter>
+                    </group>
+                    <int id="0" val="0.1"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+            <CONTROL eid="var" id="0" vid="2"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="2" id="1">
+        <die comment="false" x="258" y="297">
+            <ACTOR eid="lastcollided" id="0"/>
+        </die>
+    </group>
+    <group eventID="2" id="2">
+        <if comment="false" x="108" y="245">
+            <group eventID="2" id="-1"/>
+            <int id="0" val=""/>
+        </if>
+    </group>
+    <group eventID="2" id="3">
+        <set-val-2-4 comment="false" x="44" y="412">
+            <false comment="false" id="0" x="0" y="0"/>
+        </set-val-2-4>
+    </group>
+    <group eventID="2" id="4">
+        <set-val-2-4 comment="false" x="145" y="319">
+            <false comment="false" id="0" x="0" y="0"/>
+        </set-val-2-4>
+        <apply-filter comment="false" x="145" y="344">
+            <ACTOR eid="this" id="0"/>
+            <filter-hsb comment="false" id="1" x="0" y="0">
+                <int id="0" val="-100"/>
+            </filter-hsb>
+        </apply-filter>
+        <set-val-2-4 comment="false" x="145" y="376">
+            <true comment="false" id="0" x="0" y="0"/>
+        </set-val-2-4>
+    </group>
+    <group eventID="2" id="-1">
+        <collision-type2 comment="false" x="144" y="364">
+            <int id="0" val="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="0"/>
+        </collision-type2>
+        <collision-xynxy comment="false" x="381" y="192">
+            <int id="0" val="0"/>
+        </collision-xynxy>
+        <is-in-region comment="false" x="274" y="417">
+            <ACTOR eid="this" id="0"/>
+            <REGION eid="lastcreated" id="1"/>
+        </is-in-region>
+        <filter-tint comment="false" x="261" y="247">
+            <color b="51" g="255" id="0" r="51"/>
+            <int id="1" val="100"/>
+        </filter-tint>
+        <true comment="false" x="334" y="161"/>
+    </group>
+    <group eventID="3" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-2-4 comment="false" x="26" y="42">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-2-4>
+                <clear-filter comment="false" x="26" y="67">
+                    <ACTOR eid="this" id="0"/>
+                </clear-filter>
+            </group>
+            <CONTROL eid="var" id="0" vid="2"/>
+            <int id="1" val="1"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-mouse-press-release comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="4" id="-1">
+                        <apply-filter comment="false" x="37" y="72">
+                            <ACTOR eid="this" id="0"/>
+                            <filter-tint comment="false" id="1" x="0" y="0">
+                                <color b="51" g="255" id="0" r="51"/>
+                                <int id="1" val="100"/>
+                            </filter-tint>
+                        </apply-filter>
+                        <set-val-2-4 comment="false" x="37" y="112">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-2-4>
+                        <dolater comment="false" x="37" y="137">
+                            <group eventID="2" id="-1">
+                                <set-val-2-4 comment="false" x="48" y="164">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-2-4>
+                                <clear-filter comment="false" x="48" y="189">
+                                    <ACTOR eid="this" id="0"/>
+                                </clear-filter>
+                            </group>
+                            <int id="0" val="0.1"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-2-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="mouse"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="0"/>
+        </event-mouse-press-release>
+    </group>
+    <group eventID="4" id="1">
+        <print comment="false" x="425" y="257">
+            <int id="0" val="toto"/>
+        </print>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <clear-filter comment="false" x="62" y="214">
+            <ACTOR eid="this" id="0"/>
+        </clear-filter>
+        <set-val-2-4 comment="false" x="62" y="241">
+            <false comment="false" id="0" x="0" y="0"/>
+        </set-val-2-4>
+    </group>
+    <group eventID="5" id="1">
+        <event-mouse-press-release comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <clear-filter comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                </clear-filter>
+                <set-val-2-4 comment="false" x="26" y="69">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-2-4>
+            </group>
+            <int id="0" val="1"/>
+        </event-mouse-press-release>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="6" id="-1">
+                        <if comment="false" x="37" y="72">
+                            <group eventID="6" id="-1">
+                                <set-attribute comment="false" x="48" y="110">
+                                    <ACTOR eid="lastcollided" id="0"/>
+                                    <int id="1" val="poisson behav"/>
+                                    <int id="2" val="_mort"/>
+                                    <true comment="false" id="3" x="0" y="0"/>
+                                </set-attribute>
+                                <die comment="false" x="48" y="142">
+                                    <ACTOR eid="lastcollided" id="0"/>
+                                </die>
+                                <custom-7 comment="false" x="48" y="169">
+                                    <GROUP eid="var" id="0" vid="3"/>
+                                    <int id="1" val="1"/>
+                                </custom-7>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="lastcollided" id="0"/>
+                                    <int id="1" val="poisson behav"/>
+                                    <int id="2" val="_mort"/>
+                                </get-attribute>
+                                <false comment="false" id="1" x="0" y="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <get-val-2-4 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <ACTORTYPE eid="2" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="6" id="1">
+        <print comment="false" x="178" y="352">
+            <str-combine comment="false" id="0" x="0" y="0">
+                <int id="0" val="BEHAV. "/>
+                <str-combine comment="false" id="1" x="0" y="0">
+                    <tostring comment="false" id="0" x="0" y="0">
+                        <get-val-2-3 comment="false" id="0" x="0" y="0"/>
+                    </tostring>
+                    <str-combine comment="false" id="1" x="0" y="0">
+                        <int id="0" val=" score "/>
+                        <int id="1" val="1"/>
+                    </str-combine>
+                </str-combine>
+            </str-combine>
+        </print>
+    </group>
+    <group eventID="6" id="-1"/>
+</groups>

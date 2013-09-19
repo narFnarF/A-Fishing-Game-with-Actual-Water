@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <comment-long comment="false" x="26" y="40">
+                    <int id="0" val="r√©cup√©rer la sauvegarde et switcher √† la sc√®ne de high score"/>
+                </comment-long>
+                <load-game comment="false" x="26" y="120">
+                    <group eventID="1" id="-1">
+                        <print comment="false" x="37" y="145">
+                            <str-combine comment="false" id="0" x="0" y="0">
+                                <int id="0" val="************* Load successful? : "/>
+                                <tostring comment="false" id="1" x="0" y="0">
+                                    <load-success comment="false" id="0" x="0" y="0"/>
+                                </tostring>
+                            </str-combine>
+                        </print>
+                        <scene-change-new comment="false" x="37" y="180">
+                            <SCENE eid="1" id="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="2"/>
+                            <int id="4" val="1"/>
+                        </scene-change-new>
+                    </group>
+                </load-game>
+            </group>
+            <int id="0" val="1"/>
+        </event-delay>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

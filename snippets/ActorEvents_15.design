@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-14-1 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-14-1>
+                <print comment="false" x="26" y="65">
+                    <int id="0" val="gameover text***************"/>
+                </print>
+            </group>
+            <int id="0" val="gameover"/>
+        </event-custom>
+    </group>
+    <group eventID="1" id="-1">
+        <false comment="false" x="241" y="94"/>
+    </group>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-font-new comment="false" x="37" y="70">
+                            <FONT eid="9" id="0"/>
+                        </set-font-new>
+                        <set-font-color comment="false" x="37" y="97">
+                            <color b="153" g="0" id="0" r="255"/>
+                        </set-font-color>
+                        <draw-text comment="false" x="37" y="124">
+                            <int id="0" val="GAME OVER!!!"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </draw-text>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <scene-get-attribute comment="false" id="0" x="0" y="0">
+                            <int id="0" val="timer scene behav"/>
+                            <int id="1" val="_timer"/>
+                        </scene-get-attribute>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="1">
+        <if comment="false" x="326" y="343">
+            <group eventID="2" id="-1"/>
+            <get-val-14-1 comment="false" id="0" x="0" y="0"/>
+        </if>
+        <print comment="false" x="326" y="400">
+            <int id="0" val="gameover text***************"/>
+        </print>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
