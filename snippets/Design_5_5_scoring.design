@@ -32,7 +32,7 @@
                 <set-val-5-3 comment="false" x="26" y="187">
                     <plus comment="false" id="0" x="0" y="0">
                         <get-val-5-3 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1"/>
+                        <get-byobval-5-7-1 comment="false" id="1" x="0" y="0"/>
                     </plus>
                 </set-val-5-3>
             </group>
@@ -42,7 +42,7 @@
     </group>
     <group eventID="4" id="1">
         <print comment="false" x="416" y="150">
-            <int id="0" val="fonction est call‚àö¬©"/>
+            <int id="0" val="fonction est call‚Äö√†√∂¬¨¬©"/>
         </print>
     </group>
     <group eventID="4" id="2">
@@ -56,12 +56,12 @@
         </print>
     </group>
     <group eventID="4" id="-1">
-        <getatype comment="false" x="196" y="282">
-            <ACTOR eid="lastcreated" id="0"/>
-        </getatype>
         <pick-type comment="false" x="460" y="325">
             <ACTORTYPE id="0"/>
         </pick-type>
+        <getatype comment="false" x="196" y="282">
+            <ACTOR eid="lastcreated" id="0"/>
+        </getatype>
     </group>
     <group eventID="5" id="0">
         <event-custom comment="false" x="15" y="15">

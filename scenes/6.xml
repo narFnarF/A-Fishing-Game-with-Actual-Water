@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="0" extheight="672" extwidth="864" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="85.0" height="608" id="0" name="normal gameplay" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="800">
+<scene depth="1" desc="" eventsnippetid="28" extheight="672" extwidth="864" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="85.0" height="608" id="6" name="difficult gameplay" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="800">
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
-    <color-bg blue="255" green="255" red="204"/>
+    <color-bg blue="153" green="204" red="255"/>
     <backgrounds/>
     <foregrounds/>
     <joints/>
@@ -84,23 +84,23 @@
         </actor>
         <actor a="0.0" aid="7" c="true" group="2" id="4" name="score box 7" sx="1.0" sy="1.0" x="70" y="60" z="0">
             <snippets>
-                <s enabled="true" id="6"/>
-                <s enabled="true" id="7">
+                <s enabled="true" id="33">
                     <prop id="2" list="0" val="P1"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
+                <s enabled="true" id="6"/>
             </snippets>
         </actor>
         <actor a="0.0" aid="8" c="true" group="2" id="4" name="score box 8" sx="1.0" sy="1.0" x="724" y="66" z="0">
             <snippets>
-                <s enabled="true" id="6"/>
-                <s enabled="true" id="7">
+                <s enabled="true" id="33">
                     <prop id="2" list="0" val="P2"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
+                <s enabled="true" id="6"/>
             </snippets>
         </actor>
-        <actor a="0.0" aid="10" c="false" group="2" id="10" name="timer 10" sx="1.0" sy="1.0" x="369" y="57" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="2" id="10" name="timer 10" sx="1.0" sy="1.0" x="360" y="47" z="0"/>
         <actor a="0.0" aid="11" c="false" group="2" id="15" name="game over text 11" sx="1.0" sy="1.0" x="209" y="225" z="0"/>
     </actors>
     <snippets>
@@ -147,7 +147,7 @@
         <s enabled="true" id="9">
             <prop id="1" list="0" val="60"/>
             <prop id="2" list="0" val="0.1"/>
-            <prop id="3" list="0" val="1"/>
+            <prop id="3" list="0" val="7"/>
         </s>
     </snippets>
     <terrain/>

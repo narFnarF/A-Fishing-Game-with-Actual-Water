@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="20" extheight="672" extwidth="864" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="608" id="3" name="Menu" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="800">
+    <layers>
+        <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
+    </layers>
+    <color-bg blue="255" green="255" red="255"/>
+    <backgrounds/>
+    <foregrounds/>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="2" id="23" name="Menu difficult 1" sx="1.0" sy="1.0" x="258" y="288" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="0" name="fleche 2" sx="1.0" sy="1.0" x="-5" y="445" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="0" name="fleche 3" sx="1.0" sy="1.0" x="102" y="380" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="0" name="fleche 4" sx="1.0" sy="1.0" x="206" y="451" z="0"/>
+        <actor a="0.0" aid="5" c="true" group="3" id="0" name="fleche 5" sx="1.0" sy="1.0" x="397" y="450" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="2">
+                    <prop id="1" list="0" val="p2 gauche"/>
+                    <prop id="2" list="0" val="No Control"/>
+                    <prop id="3" list="0" val="0"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="6" c="true" group="3" id="0" name="fleche 6" sx="1.0" sy="1.0" x="512" y="365" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="2">
+                    <prop id="1" list="0" val="p2 haut"/>
+                    <prop id="2" list="0" val="No Control"/>
+                    <prop id="3" list="0" val="0"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="7" c="true" group="3" id="0" name="fleche 7" sx="1.0" sy="1.0" x="621" y="439" z="0">
+            <snippets>
+                <s enabled="true" id="1"/>
+                <s enabled="true" id="2">
+                    <prop id="1" list="0" val="p2 droite"/>
+                    <prop id="2" list="0" val="No Control"/>
+                    <prop id="3" list="0" val="0"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="8" c="false" group="2" id="28" name="Menu coop 8" sx="1.0" sy="1.0" x="32" y="269" z="0"/>
+        <actor a="0.0" aid="9" c="false" group="2" id="30" name="Menu normal 9" sx="1.0" sy="1.0" x="142" y="210" z="0"/>
+        <actor a="10.0" aid="10" c="false" group="2" id="32" name="Menu ligne 10" sx="1.0" sy="0.81609195" x="60" y="310" z="0"/>
+        <actor a="15.0" aid="11" c="false" group="2" id="32" name="Menu ligne 11" sx="1.0" sy="0.81609195" x="182" y="245" z="0"/>
+        <actor a="15.0" aid="12" c="false" group="2" id="32" name="Menu ligne 12" sx="1.0" sy="0.74712646" x="295" y="331" z="0"/>
+        <actor a="0.0" aid="13" c="false" group="2" id="34" name="Menu titre 13" sx="1.1396227" sy="1.0" x="131" y="2" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+</scene>

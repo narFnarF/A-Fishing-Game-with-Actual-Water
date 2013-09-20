@@ -4,7 +4,7 @@
         <event-delay comment="false" x="15" y="15">
             <group eventID="1" id="-1">
                 <comment-long comment="false" x="26" y="40">
-                    <int id="0" val="r√©cup√©rer la sauvegarde et switcher √† la sc√®ne de high score"/>
+                    <int id="0" val="recuperer la sauvegarde et switcher a la scene de high score"/>
                 </comment-long>
                 <load-game comment="false" x="26" y="120">
                     <group eventID="1" id="-1">
@@ -17,7 +17,7 @@
                             </str-combine>
                         </print>
                         <scene-change-new comment="false" x="37" y="180">
-                            <SCENE eid="1" id="0"/>
+                            <SCENE eid="3" id="0"/>
                             <int id="1" val="2"/>
                             <int id="2" val="1"/>
                             <int id="3" val="2"/>

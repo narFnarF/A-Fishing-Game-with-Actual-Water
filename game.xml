@@ -12,10 +12,9 @@
         <group desc="" id="6" name="Poissons"/>
     </groups>
     <cgroups>
-        <cgroup g1="3" g2="3"/>
-        <cgroup g1="1" g2="0"/>
         <cgroup g1="5" g2="6"/>
-        <cgroup g1="4" g2="6"/>
+        <cgroup g1="3" g2="3"/>
+        <cgroup g1="6" g2="4"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38" vks="38"/>
@@ -35,10 +34,11 @@
     <props/>
     <attributes>
         <number cid="0" id="2" name="Dernier score total" save="true" value="0.0"/>
+        <number cid="1" id="5" name="High score difficult" save="true" value="0"/>
         <number cid="1" id="3" name="High score single" save="true" value="0.0"/>
         <number cid="0" id="0" name="Dernier score P1" save="true" value="0.0"/>
-        <number cid="0" id="1" name="Dernier score P2" save="true" value="0.0"/>
         <number cid="1" id="4" name="High score coop" save="true" value="0.0"/>
+        <number cid="0" id="1" name="Dernier score P2" save="true" value="0.0"/>
     </attributes>
     <collisions>
         <poly id="1" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
@@ -64,7 +64,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="0,2,4,10,13,15,17,19,21,8,9" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="0,2,4,10,13,15,17,19,21,23,28,30,32,34,36,38,8,9" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>

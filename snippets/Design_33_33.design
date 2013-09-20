@@ -34,7 +34,7 @@
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
                                 <scenename comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="normal gameplay"/>
+                                <int id="1" val="difficult gameplay"/>
                             </eq>
                         </if>
                         <else comment="false" x="37" y="248">
@@ -83,7 +83,7 @@
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
                                 <scenename comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="normal gameplay"/>
+                                <int id="1" val="difficult gameplay"/>
                             </eq>
                         </if>
                         <else comment="false" x="37" y="525">
@@ -132,7 +132,7 @@
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
                                 <scenename comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="scene principale"/>
+                                <int id="1" val="difficult principale"/>
                             </eq>
                         </if>
                         <else comment="false" x="37" y="802">
