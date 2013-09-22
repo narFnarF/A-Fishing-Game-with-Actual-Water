@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="35" fixedrot="false" fric="0.2" gid="3" id="42" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="bomb" oid="-1" pausable="true" rest="0.0" shared="false" sprite="43" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="8">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
     <custom-block blocktag="custom-12" blocktype="ACTION" code="~.say(&quot;Enhanced Particle System&quot;, &quot;EmitParticles&quot;, ~,~,~,~,~,~,~,~);" desc="Emit particles to an angle with a specified force and delay." global="false" gui="Emit Particle %1 at offset (Minimum X %2 Maximum X %3 Minimum Y %4 Maximum Y %5 ) towards angle  %6 with delay %7 with force %8 for %0" id="12" message="EmitParticles" name="EmitParticles" oid="-1" return="VOID" shared="false" snippetID="11">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Particle" order="1" type="ACTORTYPE"/>
@@ -42,12 +50,12 @@
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" desc="" height="76" id="18" name="gagnant" shared="false" width="346">
-        <anim across="1" atlasID="-1" down="1" durations="100" height="76" id="0" loop="true" name="gagnant" numframes="1" originx="173" originy="38" width="346">
-            <poly data="4,0,0,346,0,346,76,0,76" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" atlasID="-1" down="1" durations="100" height="76" id="1" loop="true" name="perdant" numframes="1" originx="173" originy="38" width="346">
+    <sprite atlasID="0" default="2" desc="" height="54" id="18" name="gagnant" shared="false" width="289">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="44" id="1" loop="true" name="perdant" numframes="1" originx="173" originy="38" width="185">
             <poly data="4,0,0,346,0,346,76,0,76" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="54" id="2" loop="true" name="gagnant" numframes="1" originx="144" originy="27" width="289">
+            <poly data="4,0,0,289,0,289,54,0,54" density="0.1" fric="0.2" gid="-1000" id="0" name="gagnant" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="15" fixedrot="false" fric="0.2" gid="2" id="17" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="gagnant" oid="-1" pausable="true" rest="0.0" shared="false" sprite="18" static="true" touchable="true">
@@ -260,13 +268,33 @@
         <snippets/>
     </actor>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="62" id="8" name="Player label" offsets="0|0|0|,8|0|8,19|0|19,28|0|28,43|0|43,55|0|55,78|0|78,96|0|96,101|0|101,110|0|110,119|0|119,129|0|129,142|0|142,147|0|147,159|0|159,164|0|164,182|0|182,197|0|197,204|0|204,220|0|220,235|0|235,251|0|251,265|0|265,280|0|280,293|0|293,310|0|310,326|0|326,331|0|331,337|0|337,347|0|347,357|0|357,367|0|367,383|0|383,404|0|404,419|0|419,435|0|435,450|0|450,466|0|466,481|0|481,496|0|496,513|0|513,529|0|529,536|0|536,550|0|550,568|0|568,580|0|580,601|0|601,618|0|618,635|0|635,650|0|650,667|0|667,682|0|682,699|0|699,715|0|715,730|0|730,746|0|746,767|0|767,784|0|784,799|0|799,816|0|816,825|0|825,839|0|839,848|0|848,858|0|858,870|0|870,875|0|875,890|0|890,904|0|904,920|0|920,938|0|938,952|0|952,966|0|966,982|0|982,996|0|996,1003|0|1003,1016|0|1016,1031|0|1031,1038|0|1038,1057|0|1057,1071|0|1071,1086|0|1086,1102|0|1102,1117|0|1117,1130|0|1130,1143|0|1143,1155|0|1155,1169|0|1169,1183|0|1183,1201|0|1201,1217|0|1217,1232|0|1232,1247|0|1247,1257|0|1257,1261|0|1261,1271|0|1271,1280|0|1280,1289|0|1289,1312|0|1312,1335|0|1335,1358|0|1358,1381|0|1381,1404|0|1404,1427|0|1427,1450|0|1450,1473|0|1473,1496|0|1496,1519|0|1519,1542|0|1542,1565|0|1565,1588|0|1588,1611|0|1611,1634|0|1634,1657|0|1657,1680|0|1680,1703|0|1703,1726|0|1726,1749|0|1749,1772|0|1772,1795|0|1795,1818|0|1818,1841|0|1841,1864|0|1864,1887|0|1887,1910|0|1910,1933|0|1933,1956|0|1956,1979|0|1979,2002|0|2002,2025|0|2025,2033|0|2033,2041|0|2041,2050|0|2050,2062|0|2062,2072|0|2072,2087|0|2087,2091|0|2091,2101|0|2101,2110|0|2110,2129|0|2129,2138|0|2138,2149|0|2149,2171|0|2171,2182|0|2182,2201|0|2201,2209|0|2209,2215|0|2215,2226|0|2226,2233|0|2233,2243|0|2243,2248|0|2248,2258|0|2258,2269|0|2269,2277|0|2277,2282|0|2282,2289|0|2289,2300|0|2300,2311|0|2311,2329|0|2329,2347|0|2347,2368|0|2368,2384|0|2384,2399|0|2399,2414|0|2414,2429|0|2429,2444|0|2444,2459|0|2459,2474|0|2474,2498|0|2498,2513|0|2513,2528|0|2528,2543|0|2543,2558|0|2558,2573|0|2573,2581|0|2581,2589|0|2589,2597|0|2597,2607|0|2607,2625|0|2625,2642|0|2642,2659|0|2659,2676|0|2676,2693|0|2693,2710|0|2710,2727|0|2727,2739|0|2739,2755|0|2755,2770|0|2770,2785|0|2785,2800|0|2800,2815|0|2815,2830|0|2830,2841|0|2841,2854|0|2854,0|31|2869,15|31|2884,30|31|2899,45|31|2914,60|31|2929,75|31|2944,100|31|2969,116|31|2985,130|31|2999,144|31|3013,158|31|3027,172|31|3041,178|31|3047,185|31|3054,192|31|3061,201|31|3070,215|31|3084,229|31|3098,244|31|3113,259|31|3128,274|31|3143,289|31|3158,304|31|3173,316|31|3185,328|31|3197,342|31|3211,356|31|3225,370|31|3239,384|31|3253,399|31|3268,415|31|3284,430|31|3299,446|31|3315,458|31|3327,474|31|3343,486|31|3355,502|31|3371,514|31|3383,528|31|3397,538|31|3407,552|31|3421,562|31|3431,576|31|3445,586|31|3455,600|31|3469,610|31|3479,624|31|3493,640|31|3509,657|31|3526,671|31|3540,681|31|3550,692|31|3561,702|31|3571,713|31|3582,723|31|3592,734|31|3603,744|31|3613,755|31|3624,765|31|3634,776|31|3645,790|31|3659,802|31|3671,816|31|3685,828|31|3697,842|31|3711,854|31|3723,868|31|3737,880|31|3749,893|31|3762,904|31|3773,922|31|3791,935|31|3804,944|31|3813,953|31|3822,961|31|3830,969|31|3838,978|31|3847,987|31|3856,992|31|3861,997|31|3866,1000|31|3869,1006|31|3875,1016|31|3885,1026|31|3895,1037|31|3906,1047|31|3916,1060|31|3929,1071|31|3940,1082|31|3951,1092|31|3961,1098|31|3967,1108|31|3977,1111|31|3980,1121|31|3990,1128|31|3997,1138|31|4007,1145|31|4014,1159|31|4028,1167|31|4036,1180|31|4049,1191|31|4060,1204|31|4073,1215|31|4084,1228|31|4097,1239|31|4108,1253|31|4122,1266|31|4135,1277|31|4146,1293|31|4162,1305|31|4174,1321|31|4190,1333|31|4202,1349|31|4218,1362|31|4231,1390|31|4259,1416|31|4285,1429|31|4298,1436|31|4305,1449|31|4318,1456|31|4325,1469|31|4338,1478|31|4347,1489|31|4358,1498|31|4367,1509|31|4378,1518|31|4387,1529|31|4398,1538|31|4407,1555|31|4424,1568|31|4437,1583|31|4452,1591|31|4460,1606|31|4475,1615|31|4484,1630|31|4499,1638|31|4507,1650|31|4519,1660|31|4529,1672|31|4541,1682|31|4551,1694|31|4563,1704|31|4573,1716|31|4585,1726|31|4595,1739|31|4608,1751|31|4620,1763|31|4632,1773|31|4642,1793|31|4662,1811|31|4680,1825|31|4694,1837|31|4706,1852|31|4721,1864|31|4733,1875|31|4744,1887|31|4756,1898|31|4767,1915|31|4784,1930|31|4799" oid="-1" rowHeight="31" shared="false"/>
-    <sprite atlasID="0" default="0" desc="" height="68" id="3" name="poisson" shared="false" width="68">
-        <anim across="1" atlasID="-1" down="1" durations="100" height="68" id="0" loop="true" name="Animation 0" numframes="1" originx="34" originy="34" width="68">
+    <sprite atlasID="0" default="0" desc="" height="72" id="43" name="poisson" shared="false" width="40">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="72" id="0" loop="true" name="Animation 0" numframes="1" originx="34" originy="34" width="40">
             <circle data="30,5,6" density="0.1" fric="0.2" gid="-1000" id="2" name="Circle" rest="0.0" sensor="false"/>
             <poly data="4,0,0,68,0,68,68,0,68" density="0.1" fric="0.2" gid="-1000" id="-1" name="default" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <sprite atlasID="0" default="0" desc="" height="68" id="3" name="poisson" shared="false" width="68">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="68" id="0" loop="true" name="Animation 0" numframes="1" originx="34" originy="34" width="68">
+            <poly data="4,10,22,60,22,60,52,10,52" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="3" fixedrot="false" fric="0.2" gid="3" id="2" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="poisson" oid="-1" pausable="true" rest="0.0" shared="false" sprite="3" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="8">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="37" id="47" name="poisson cool" shared="false" width="40">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="37" id="0" loop="true" name="Animation 0" numframes="1" originx="20" originy="18" width="40">
+            <poly data="4,0,0,40,0,40,37,0,37" density="0.1" fric="0.2" gid="-1000" id="-1" name="default" rest="0.0" sensor="false"/>
+            <circle data="13,5,5" density="0.1" fric="0.2" gid="-1000" id="1" name="Circle" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,40,0,40,37,0,37" density="0.1" fric="0.2" gid="-1000" id="-1" name="default" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="36" fixedrot="false" fric="0.2" gid="3" id="46" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="poisson cool" oid="-1" pausable="true" rest="0.0" shared="false" sprite="47" static="false" touchable="true">
         <snippets>
             <s enabled="true" id="8">
                 <prop id="1" list="0" val="false"/>
@@ -308,6 +336,9 @@
     <custom-block blocktag="custom-7" blocktype="ACTION" code="sayToScene(&quot;score scene behav&quot;, &quot;scoring&quot;, ~,~);" desc="" global="false" gui="joueur %0 a scoré %1 points" id="7" message="scoring" name="scoring" oid="-1" return="VOID" shared="false" snippetID="5">
         <blank name="joueur" order="0" type="GROUP"/>
         <blank name="points" order="1" type="NUMBER"/>
+    </custom-block>
+    <custom-block blocktag="custom-45" blocktype="ACTION" code="sayToScene(&quot;spawn poissons&quot;, &quot;spawnThis&quot;, ~);" desc="" global="false" gui="spawn a %0 for each player" id="45" message="spawnThis" name="spawnThis" oid="-1" return="VOID" shared="false" snippetID="4">
+        <blank name="an actor" order="0" type="ACTORTYPE"/>
     </custom-block>
     <sprite atlasID="0" default="0" desc="" height="16" id="11" name="timer" shared="false" width="16">
         <anim across="2" atlasID="-1" down="1" durations="100,100" height="16" id="0" loop="false" name="Animation 0" numframes="2" originx="0" originy="0" width="32">

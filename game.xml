@@ -22,9 +22,10 @@
         <key id="2" keyname="LEFT" name="left" vk="37" vks="37"/>
         <key id="3" keyname="RIGHT" name="right" vk="39" vks="39"/>
         <key id="4" keyname="SPACE" name="space" vk="32" vks="32"/>
-        <key id="5" keyname="ENTER" name="mouse" vk="10" vks="10"/>
         <key id="6" keyname="W" name="cheat time" vk="87" vks="87"/>
-        <key id="7" keyname="W" name="Enter" vk="87" vks="87"/>
+        <key id="7" keyname="W" name="Continue" vk="87" vks="87"/>
+        <key id="8" keyname="D" name="Debug" vk="68" vks="68"/>
+        <key id="9" keyname="R" name="Reset" vk="82" vks="82"/>
     </input>
     <attcats>
         <cat id="0" name="score"/>
@@ -64,7 +65,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="0,2,4,10,13,15,17,19,21,23,28,30,32,34,36,38,8,9" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="0,2,4,10,13,15,17,19,21,23,28,30,32,34,36,38,42,46,8,9" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>

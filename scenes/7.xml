@@ -16,7 +16,10 @@
                     <prop id="2" list="0" val="P1"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
-                <s enabled="true" id="6"/>
+                <s enabled="true" id="6">
+                    <prop id="1" list="0" val="Px"/>
+                    <prop id="2" list="0" val="0.0"/>
+                </s>
             </snippets>
         </actor>
         <actor a="0.0" aid="2" c="true" group="2" id="4" name="scorebox 2" sx="1.0" sy="1.0" x="599" y="130" z="0">
@@ -25,11 +28,14 @@
                     <prop id="2" list="0" val="P2"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
-                <s enabled="true" id="6"/>
+                <s enabled="true" id="6">
+                    <prop id="1" list="0" val="Px"/>
+                    <prop id="2" list="0" val="0.0"/>
+                </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="4" c="false" group="2" id="17" name="gagnant 4" sx="1.0" sy="1.0" x="1" y="205" z="0"/>
-        <actor a="0.0" aid="5" c="false" group="2" id="17" name="gagnant 5" sx="1.0" sy="1.0" x="459" y="206" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="2" id="17" name="gagnant 4" sx="1.0" sy="1.0" x="2" y="223" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="2" id="17" name="gagnant 5" sx="1.0" sy="1.0" x="460" y="224" z="0"/>
         <actor a="0.0" aid="7" c="false" group="2" id="38" name="High Score display Difficult 7" sx="1.0" sy="1.0" x="266" y="412" z="0"/>
     </actors>
     <snippets/>

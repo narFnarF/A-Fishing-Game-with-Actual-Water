@@ -78,8 +78,8 @@
         </draw-text>
     </group>
     <group eventID="1" id="-1">
-        <get-game-val-3 comment="false" x="284" y="312"/>
         <get-val-31-2 comment="false" x="477" y="385"/>
+        <get-game-val-3 comment="false" x="284" y="312"/>
     </group>
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">
@@ -88,9 +88,9 @@
                     <group eventID="2" id="-1">
                         <if comment="false" x="37" y="67">
                             <group eventID="2" id="-1">
-                                <set-game-val-3 comment="false" x="48" y="97">
+                                <set-game-val-5 comment="false" x="48" y="97">
                                     <get-game-val-0 comment="false" id="0" x="0" y="0"/>
-                                </set-game-val-3>
+                                </set-game-val-5>
                                 <set-val-31-1 comment="false" x="48" y="122">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-31-1>
@@ -107,9 +107,9 @@
                         </if>
                         <if comment="false" x="37" y="186">
                             <group eventID="2" id="-1">
-                                <set-game-val-3 comment="false" x="48" y="216">
+                                <set-game-val-5 comment="false" x="48" y="216">
                                     <get-game-val-1 comment="false" id="0" x="0" y="0"/>
-                                </set-game-val-3>
+                                </set-game-val-5>
                                 <set-val-31-1 comment="false" x="48" y="241">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-31-1>
@@ -164,8 +164,18 @@
             </more>
         </if>
     </group>
+    <group eventID="2" id="2">
+        <set-game-val-3 comment="false" x="623" y="467">
+            <int id="0" val=""/>
+        </set-game-val-3>
+    </group>
+    <group eventID="2" id="3">
+        <set-game-val-3 comment="false" x="423" y="440">
+            <int id="0" val=""/>
+        </set-game-val-3>
+    </group>
     <group eventID="2" id="-1">
-        <get-game-val-3 comment="false" x="530" y="212"/>
         <get-game-val-3 comment="false" x="384" y="34"/>
+        <get-game-val-3 comment="false" x="530" y="212"/>
     </group>
 </groups>

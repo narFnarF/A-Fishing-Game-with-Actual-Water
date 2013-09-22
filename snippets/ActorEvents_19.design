@@ -127,28 +127,9 @@
                                 <get-game-val-3 comment="false" id="1" x="0" y="0"/>
                             </more>
                         </if>
-                        <if comment="false" x="37" y="305">
+                        <save-game comment="false" x="37" y="305">
                             <group eventID="2" id="-1">
-                                <set-game-val-4 comment="false" x="48" y="335">
-                                    <get-game-val-2 comment="false" id="0" x="0" y="0"/>
-                                </set-game-val-4>
-                                <set-val-16-2 comment="false" x="48" y="360">
-                                    <true comment="false" id="0" x="0" y="0"/>
-                                </set-val-16-2>
-                                <say comment="false" x="48" y="385">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="Enhanced Particle System"/>
-                                    <int id="2" val="StartEmitting"/>
-                                </say>
-                            </group>
-                            <more comment="false" id="0" x="0" y="0">
-                                <get-game-val-2 comment="false" id="0" x="0" y="0"/>
-                                <get-game-val-4 comment="false" id="1" x="0" y="0"/>
-                            </more>
-                        </if>
-                        <save-game comment="false" x="37" y="424">
-                            <group eventID="2" id="-1">
-                                <print comment="false" x="48" y="449">
+                                <print comment="false" x="48" y="330">
                                     <str-combine comment="false" id="0" x="0" y="0">
                                         <int id="0" val="************** Saving successful? : "/>
                                         <tostring comment="false" id="1" x="0" y="0">
@@ -165,69 +146,26 @@
             </group>
         </init>
     </group>
+    <group eventID="2" id="1">
+        <if comment="false" x="294" y="577">
+            <group eventID="2" id="-1">
+                <set-game-val-4 comment="false" x="305" y="607">
+                    <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                </set-game-val-4>
+                <set-val-16-2 comment="false" x="305" y="632">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-16-2>
+                <say comment="false" x="305" y="657">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Enhanced Particle System"/>
+                    <int id="2" val="StartEmitting"/>
+                </say>
+            </group>
+            <more comment="false" id="0" x="0" y="0">
+                <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                <get-game-val-4 comment="false" id="1" x="0" y="0"/>
+            </more>
+        </if>
+    </group>
     <group eventID="2" id="-1"/>
-    <group eventID="3" id="0">
-        <print comment="false" x="471" y="294">
-            <int id="0" val="toto"/>
-        </print>
-    </group>
-    <group eventID="3" id="1">
-        <event-att-bool comment="false" x="15" y="15">
-            <group eventID="3" id="-1">
-                <print comment="false" x="26" y="47">
-                    <int id="0" val="toto"/>
-                </print>
-                <say comment="false" x="26" y="67">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="Enhanced Particle System"/>
-                    <int id="2" val="StartEmitting"/>
-                </say>
-            </group>
-            <int id="0" val="1"/>
-            <true comment="false" id="1" x="0" y="0"/>
-        </event-att-bool>
-    </group>
-    <group eventID="3" id="2">
-        <custom-12 comment="false" x="146" y="233">
-            <ACTOR eid="this" id="0"/>
-            <ACTORTYPE id="1"/>
-            <int id="2" val=""/>
-            <int id="3" val=""/>
-            <int id="4" val=""/>
-            <int id="5" val=""/>
-            <int id="6" val=""/>
-            <int id="7" val=""/>
-            <int id="8" val=""/>
-        </custom-12>
-    </group>
-    <group eventID="3" id="3">
-        <scene-say comment="false" x="76" y="309">
-            <int id="0" val="Enhanced Particle System"/>
-            <int id="1" val="StartEmitting"/>
-        </scene-say>
-    </group>
-    <group eventID="3" id="-1"/>
-    <group eventID="4" id="0">
-        <event-att-bool comment="false" x="15" y="15">
-            <group eventID="4" id="-1">
-                <print comment="false" x="26" y="47">
-                    <int id="0" val="toto"/>
-                </print>
-                <say comment="false" x="26" y="67">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="Enhanced Particle System"/>
-                    <int id="2" val="StartEmitting"/>
-                </say>
-            </group>
-            <int id="0" val="2"/>
-            <true comment="false" id="1" x="0" y="0"/>
-        </event-att-bool>
-    </group>
-    <group eventID="4" id="1">
-        <scene-say comment="false" x="86" y="307">
-            <int id="0" val="Enhanced Particle System"/>
-            <int id="1" val="StartEmitting"/>
-        </scene-say>
-    </group>
-    <group eventID="4" id="-1"/>
 </groups>

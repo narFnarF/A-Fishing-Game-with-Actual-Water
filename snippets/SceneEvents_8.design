@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <draw-text comment="false" x="26" y="40">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Rouge gauche: "/>
+                        <tostring comment="false" id="1" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <CONTROL eid="2" id="1"/>
+                            </keystate>
+                        </tostring>
+                    </str-combine>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="5"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="83">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Rouge milieu: "/>
+                        <tostring comment="false" id="1" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <CONTROL eid="0" id="1"/>
+                            </keystate>
+                        </tostring>
+                    </str-combine>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="6"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="126">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Rouge droite: "/>
+                        <tostring comment="false" id="1" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <CONTROL eid="3" id="1"/>
+                            </keystate>
+                        </tostring>
+                    </str-combine>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="7"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="169">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Bleu gauche: "/>
+                        <tostring comment="false" id="1" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <CONTROL eid="4" id="1"/>
+                            </keystate>
+                        </tostring>
+                    </str-combine>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="9"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="212">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Bleu milieu: "/>
+                        <tostring comment="false" id="1" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <CONTROL eid="1" id="1"/>
+                            </keystate>
+                        </tostring>
+                    </str-combine>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="10"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="255">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Bleu droite: "/>
+                        <tostring comment="false" id="1" x="0" y="0">
+                            <mousestate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </mousestate>
+                        </tostring>
+                    </str-combine>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="11"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="298">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Continue: "/>
+                        <tostring comment="false" id="1" x="0" y="0">
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <CONTROL eid="7" id="1"/>
+                            </keystate>
+                        </tostring>
+                    </str-combine>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="13"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="341">
+                    <int id="0" val="Scores: "/>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="15"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="371">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Normal: "/>
+                        <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="16"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="401">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Difficult: "/>
+                        <get-game-val-5 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="17"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="431">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Coop: "/>
+                        <get-game-val-4 comment="false" id="1" x="0" y="0"/>
+                    </str-combine>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="18"/>
+                    </times>
+                </draw-text>
+                <draw-text comment="false" x="26" y="461">
+                    <int id="0" val="Press &amp;#039;D&amp;#039; to exit or &amp;#039;R&amp;#039; to reset high scores"/>
+                    <int id="1" val="200"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <get-font-height comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="22"/>
+                    </times>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1">
+        <str-combine comment="false" x="132" y="612">
+            <int id="0" val=""/>
+            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
+        </str-combine>
+    </group>
+    <group eventID="2" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <scene-change-new comment="false" x="26" y="42">
+                    <SCENE eid="3" id="0"/>
+                    <int id="1" val="4"/>
+                    <int id="2" val=".5"/>
+                    <int id="3" val="4"/>
+                    <int id="4" val=".5"/>
+                </scene-change-new>
+            </group>
+            <CONTROL eid="8" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-game-val-3 comment="false" x="26" y="42">
+                    <int id="0" val="0"/>
+                </set-game-val-3>
+                <set-game-val-5 comment="false" x="26" y="62">
+                    <int id="0" val="0"/>
+                </set-game-val-5>
+                <set-game-val-4 comment="false" x="26" y="82">
+                    <int id="0" val="0"/>
+                </set-game-val-4>
+            </group>
+            <CONTROL eid="9" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="3" id="1">
+        <scene-change-new comment="false" x="131" y="281">
+            <SCENE eid="3" id="0"/>
+            <int id="1" val="4"/>
+            <int id="2" val=".5"/>
+            <int id="3" val="4"/>
+            <int id="4" val=".5"/>
+        </scene-change-new>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

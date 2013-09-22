@@ -8,4 +8,5 @@
     <scene desc="" format="1.0" id="5" name="coop score"/>
     <scene desc="" format="1.0" id="6" name="difficult gameplay"/>
     <scene desc="" format="1.0" id="7" name="difficult score"/>
+    <scene desc="" format="1.0" id="8" name="debug"/>
 </scenes>
