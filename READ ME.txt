@@ -1,0 +1,3 @@
+Cette branche contient l'archive du vieux projet Stencyl de 2013.
+
+Pour le projet à jour (en Construct 2), il faut aller dans la branche "Master".
