@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>A Fishing Game with Actual Water</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author>narF</author>
+    <author-email>narF@narF.ca</author-email>
+    <author-website>http://narF.ca</author-website>
+    <app-id>ca.narF.fishing</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="hardlight">Hard Light</effect>
+        <effect author="Scirra" id="hsladjust">Adjust HSL</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">Yes</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="text box">
+            <object-type name="scoreBleuTxt" sid="7469980472407822">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="scoreRougeTxt" sid="595576895053108">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="timerTxt" sid="3641362334468746">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="highScoreTxt" sid="4759318761692119">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="highScoreNewTxt" sid="3019785481196555">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="highScoreLabelTxt" sid="9725773119594543">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="demoTxt" sid="6246089822256944">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Flash" sid="7489454049398053">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+        </object-folder>
+        <object-folder name="props">
+            <object-type name="bateau" sid="6430405432396133">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="bleu" pingpong="0" repeatcount="1" repeatto="0" sid="6642541213540955" speed="5">
+                        <frame duration="1" hotspotX="0.506329" hotspotY="0.506024" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="rouge" pingpong="0" repeatcount="1" repeatto="0" sid="7429285735163445" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.506024" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bulle" sid="4837947495474032">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="actif" sid="9469932539070936" type="boolean" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6965471984236118" speed="5">
+                        <frame duration="1" hotspotX="0.530488" hotspotY="0.487805" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgScore" sid="7693686394838312">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3537316658769076" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgGameplay" sid="9815059748134265">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1801064301788136" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgBlancGameplay" sid="4281381320560405">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6082423698217581" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="rondHighScore" sid="1713060457717735">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="couleur" sid="5787096356789058" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4274392695901164" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgTitleScreen" sid="6814701094039156">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1685126113327228" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgGameOver" sid="9085872761074928">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="897228919608872" speed="5">
+                        <frame duration="1" hotspotX="0.500703" hotspotY="0.504762">
+                            <collision-poly>
+                                <point x="0.0253165" y="0.171429" />
+                                <point x="0.499297" y="0.4" />
+                                <point x="0.949367" y="0.342857" />
+                                <point x="0.959212" y="0.495238" />
+                                <point x="0.949367" y="0.657143" />
+                                <point x="0.499297" y="0.857143" />
+                                <point x="0.0281294" y="0.809524" />
+                                <point x="0.00703235" y="0.495238" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="plugins">
+            <object-type name="Keyboard" sid="6966274912078713">
+                <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="Mouse" sid="9173938277687058">
+                <plugin id="Mouse" />
+            </object-type>
+            <object-type name="Browser" sid="8012990962170956">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="timer10Sec" sid="376045395646588">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="4575449426024646">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5815411411832539" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Function" sid="8701719635160586">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="Audio" sid="5500441377663148">
+                <plugin id="Audio" />
+            </object-type>
+        </object-folder>
+        <object-type name="bol" sid="1003632438638532">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="actif" sid="8977801110498531" type="boolean" />
+                <instance-variable name="id" sid="5471451627070187" type="string" />
+                <instance-variable name="actifTimer" sid="7202630375461807" type="number" />
+            </instance-variables>
+            <effects>
+                <effect-type name="HardLight">
+                    <effect id="hardlight" />
+                </effect-type>
+                <effect-type name="AdjustHSL">
+                    <effect id="hsladjust" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="bleu" pingpong="0" repeatcount="1" repeatto="0" sid="4268439442816249" speed="5">
+                    <frame duration="1" hotspotX="0.503497" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.027972" y="0.0540541" />
+                            <point x="0.496504" y="0" />
+                            <point x="0.972028" y="0.0540541" />
+                            <point x="0.944056" y="0.5" />
+                            <point x="0.86014" y="0.72973" />
+                            <point x="0.496504" y="1" />
+                            <point x="0.13986" y="0.72973" />
+                            <point x="0.0559441" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="rouge" pingpong="0" repeatcount="1" repeatto="0" sid="2839019600930552" speed="5">
+                    <frame duration="1" hotspotX="0.503497" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.027972" y="0.0540541" />
+                            <point x="0.496504" y="0" />
+                            <point x="0.972028" y="0.0540541" />
+                            <point x="0.944056" y="0.5" />
+                            <point x="0.86014" y="0.72973" />
+                            <point x="0.496504" y="1" />
+                            <point x="0.13986" y="0.72973" />
+                            <point x="0.0559441" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="poisson" sid="9801488375528816">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="fish1" pingpong="0" repeatcount="1" repeatto="0" sid="3728216869295064" speed="5">
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.191781" y="0.28" />
+                            <point x="0.493151" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.493151" y="0.78" />
+                            <point x="0.232877" y="0.66" />
+                            <point x="0.136986" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="fish2" pingpong="0" repeatcount="1" repeatto="0" sid="4932934185900417" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.511628">
+                        <collision-poly>
+                            <point x="0.108911" y="0.255814" />
+                            <point x="0.49505" y="0" />
+                            <point x="0.881188" y="0.27907" />
+                            <point x="0.940594" y="0.488372" />
+                            <point x="0.831683" y="0.604651" />
+                            <point x="0.49505" y="0.813953" />
+                            <point x="0.207921" y="0.511628" />
+                            <point x="0.0792079" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="fish3" pingpong="0" repeatcount="1" repeatto="0" sid="5502503754652229" speed="5">
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.507692">
+                        <collision-poly>
+                            <point x="0.170732" y="0.215385" />
+                            <point x="0.5" y="0" />
+                            <point x="0.731707" y="0.338462" />
+                            <point x="0.951219" y="0.492308" />
+                            <point x="0.707317" y="0.630769" />
+                            <point x="0.5" y="0.861538" />
+                            <point x="0.195122" y="0.753846" />
+                            <point x="0.097561" y="0.492308" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="4879682816673997">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3019020173928591" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.99875" y="0.998355" />
+                            <point x="0.00125" y="0.998355" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="poissonGold" sid="1587362226205487">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="gold1" pingpong="0" repeatcount="1" repeatto="0" sid="6352902952540171" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.166667" y="0.285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.916667" y="0.142857" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.8125" y="0.678571" />
+                            <point x="0.5" y="0.714286" />
+                            <point x="0.208333" y="0.642857" />
+                            <point x="0.104167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="gold2" pingpong="0" repeatcount="1" repeatto="0" sid="1540156846784436" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.230769" y="0.230769" />
+                            <point x="0.487179" y="0.128205" />
+                            <point x="0.74359" y="0.25641" />
+                            <point x="0.871795" y="0.487179" />
+                            <point x="0.769231" y="0.769231" />
+                            <point x="0.487179" y="0.74359" />
+                            <point x="0.205128" y="0.794872" />
+                            <point x="0.25641" y="0.487179" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="petitsScores" sid="8605772613816149">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="9222029624324645">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="9636270099238358">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="plus1" pingpong="0" repeatcount="1" repeatto="0" sid="801803705338201" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="plus3" pingpong="0" repeatcount="1" repeatto="0" sid="5070556840843172" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
+                </animation>
+                <animation framecount="1" loop="0" name="moins5" pingpong="0" repeatcount="1" repeatto="0" sid="2095024277437287" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="poissons" plugin-id="Sprite" sid="8274945299722741">
+            <members>
+                <member>poisson</member>
+                <member>poissonGold</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="type" sid="8048710047276956" type="string" />
+                <instance-variable name="valeur" sid="8521552331591501" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Physics2" sid="362757695932454">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout2" sid="8418181988146791">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>credits.xml</layout>
+        <layout>debug.xml</layout>
+        <layout>gameplay.xml</layout>
+        <layout>score screen.xml</layout>
+        <layout>title.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>gameplay events.xml</event-sheet>
+        <event-sheet>score screen events.xml</event-sheet>
+        <event-sheet>title events.xml</event-sheet>
+        <event-sheet>credits events.xml</event-sheet>
+        <event-sheet>debug events.xml</event-sheet>
+        <event-sheet>global stuff.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+        <global-instance type="Mouse" uid="8" />
+        <global-instance type="Browser" uid="29" />
+        <global-instance type="Function" uid="38" />
+        <global-instance type="Audio" uid="42">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="fishing bleu.m4a" />
+        <file name="fishing bleu.ogg" />
+        <file name="fishing bleu.wav" />
+        <file name="fishing rouge.m4a" />
+        <file name="fishing rouge.ogg" />
+        <file name="fishing rouge.wav" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

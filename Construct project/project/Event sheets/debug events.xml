@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>debug events</name>
+    <events>
+        <event-block sid="2604367959671649">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5888343978027324" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5195928547790276" type="highScoreNewTxt">
+                    <param id="0" name="Text">&quot;Debug&quot; &amp; newline</param>
+                </action>
+                <action id="1" name="Append text" sid="4514595573834483" type="highScoreNewTxt">
+                    <param id="0" name="Text">newline</param>
+                </action>
+                <action id="1" name="Append text" sid="9912528490524233" type="highScoreNewTxt">
+                    <param id="0" name="Text">&quot;Last button pressed: &quot; &amp; newline</param>
+                </action>
+                <action id="1" name="Append text" sid="2201462275774855" type="highScoreNewTxt">
+                    <param id="0" name="Text">Keyboard.LastKeyCode &amp; newline</param>
+                </action>
+                <action id="1" name="Append text" sid="5635408486315035" type="highScoreNewTxt">
+                    <param id="0" name="Text">Keyboard.StringFromKeyCode(Keyboard.LastKeyCode) &amp; newline</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3179183722467072">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7474915116117794" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1007927332468065" type="System">
+                    <param id="0" name="Layout">title</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

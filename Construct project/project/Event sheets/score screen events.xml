@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>score screen events</name>
+    <events>
+        <include>global stuff</include>
+        <variable constant="0" name="highScore" sid="4842407102254455" static="0" type="number">0</variable>
+        <event-block sid="6562416026110846">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1242478995633891" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action disabled="1" id="-2" name="Go to layout" sid="4749854667554005" type="System">
+                    <param id="0" name="Layout">title</param>
+                </action>
+                <action id="0" name="Call function" sid="3956449133930165" type="Function">
+                    <param id="0" name="Name">&quot;transition&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;title&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5592114310219784">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6335921489704872" type="System" />
+                <condition id="-14" name="Compare variable" sid="8513914189226965" type="System">
+                    <param id="0" name="Variable">highScore</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">max(scoreBleu, scoreRouge)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4243497382716805" type="highScoreNewTxt" />
+            </actions>
+        </event-block>
+        <event-block sid="2103018082346339">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5418992510903432" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8461949651188287" type="System">
+                    <param id="0" name="Variable">highScore</param>
+                    <param id="1" name="Value">max(highScore, scoreBleu, scoreRouge)</param>
+                </action>
+                <action id="0" name="Set text" sid="591085630653024" type="scoreBleuTxt">
+                    <param id="0" name="Text">scoreBleu</param>
+                </action>
+                <action id="0" name="Set text" sid="6164624291396144" type="scoreRougeTxt">
+                    <param id="0" name="Text">scoreRouge</param>
+                </action>
+                <action id="0" name="Set text" sid="2070128732691188" type="highScoreTxt">
+                    <param id="0" name="Text">highScore</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="8135088426168942">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9465261627993423" type="System">
+                            <param id="0" name="Variable">scoreBleu</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">scoreRouge</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="492634472518789" type="rondHighScore">
+                            <param id="0" name="Instance variable">couleur</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;bleu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4845005401627365" type="rondHighScore" />
+                    </actions>
+                </event-block>
+                <event-block sid="4410355208260263">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4863375624639034" type="System">
+                            <param id="0" name="Variable">scoreRouge</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">scoreBleu</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3308975166654719" type="rondHighScore">
+                            <param id="0" name="Instance variable">couleur</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;rouge&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6441494479952095" type="rondHighScore" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9652121222716051">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="3995308019540481" type="timer10Sec" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-2" name="Go to layout" sid="7469773111935327" type="System">
+                    <param id="0" name="Layout">title</param>
+                </action>
+                <action id="0" name="Call function" sid="7897902138333724" type="Function">
+                    <param id="0" name="Name">&quot;transition&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;title&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

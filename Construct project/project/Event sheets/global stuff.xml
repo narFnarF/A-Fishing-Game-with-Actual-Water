@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>global stuff</name>
+    <events>
+        <event-block sid="9310977519065268">
+            <conditions>
+                <condition id="0" name="On function" sid="2496091394290524" type="Function">
+                    <param id="0" name="Name">&quot;transition&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="nextScene" sid="9016334436385551" static="1" type="text"></variable>
+                <event-block sid="9892875044266835">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="6613672304122248" type="System">
+                            <param id="0" name="Count">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="622929054342228" type="System">
+                            <param id="0" name="Object to create">bulle</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">random(LayoutWidth)</param>
+                            <param id="3" name="Y">random(LayoutHeight)</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="6041365313237738" type="bulle">
+                            <param id="0" name="Width">3</param>
+                            <param id="1" name="Height">3</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="469638034007437" type="bulle">
+                            <param id="0" name="Instance variable">actif</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="14" name="Log" sid="523050622034393" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;create bulle&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7124030908173562">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="1651823749779949" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8845319289608394" type="System">
+                            <param id="0" name="Variable">nextScene</param>
+                            <param id="1" name="Value">Function.Param(0)</param>
+                        </action>
+                        <action id="14" name="Log" sid="3311734713597888" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;Avant&quot;</param>
+                        </action>
+                        <action id="14" name="Log" sid="2522554579664252" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;nextScene: &quot; &amp; nextScene</param>
+                        </action>
+                        <action id="14" name="Log" sid="4651477074213425" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;Param(0) :&quot; &amp; Function.Param(0)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7906138357242297" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="14" name="Log" sid="7887596975541183" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;Après&quot;</param>
+                        </action>
+                        <action id="14" name="Log" sid="5910701111373276" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;nextScene: &quot; &amp; nextScene</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="9272086544408655" type="System">
+                            <param id="0" name="Layout">nextScene</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="955206991744791">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="2436294955701344" type="bulle">
+                    <param id="0" name="Instance variable">actif</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="8510678646393693" type="bulle">
+                    <param id="0" name="Width">bulle.Width+10</param>
+                    <param id="1" name="Height">bulle.Height+10</param>
+                </action>
+                <action id="14" name="Log" sid="7789311587289875" type="Browser">
+                    <param id="0" name="Type">0</param>
+                    <param id="1" name="Message">&quot;grossi&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

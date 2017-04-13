@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>title events</name>
+    <events>
+        <include>global stuff</include>
+        <event-block sid="9908492583753357">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3567303468579072" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action disabled="1" id="-2" name="Go to layout" sid="2139711682937655" type="System">
+                    <param id="0" name="Layout">gameplay</param>
+                </action>
+                <action id="0" name="Call function" sid="5487951623982205" type="Function">
+                    <param id="0" name="Name">&quot;transition&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;gameplay&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4661583709320237">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="557430043709033" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6383796125657211" type="System">
+                    <param id="0" name="Layout">debug</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5893484554164508">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5317596648666559" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7850053319573528" type="System">
+                    <param id="0" name="Variable">demo</param>
+                    <param id="1" name="Value">&quot;off&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1425007338642777">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="5208824998742447" type="timer10Sec" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-2" name="Go to layout" sid="1141175204360101" type="System">
+                    <param id="0" name="Layout">credits</param>
+                </action>
+                <action id="0" name="Call function" sid="2990395600603994" type="Function">
+                    <param id="0" name="Name">&quot;transition&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;credits&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

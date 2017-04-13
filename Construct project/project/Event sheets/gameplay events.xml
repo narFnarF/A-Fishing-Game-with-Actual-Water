@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>gameplay events</name>
+    <events>
+        <include>global stuff</include>
+        <variable constant="0" name="demo" sid="8967551794771744" static="0" type="text">off</variable>
+        <variable constant="0" name="timer" sid="2285276393855262" static="0" type="number">0</variable>
+        <variable constant="0" name="scoreRouge" sid="68533291509053" static="0" type="number">0</variable>
+        <variable constant="0" name="scoreBleu" sid="6529407099459345" static="0" type="number">0</variable>
+        <event-block sid="29767160585786">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1446341100793489" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7755552659955694" type="System">
+                    <param id="0" name="Variable">scoreBleu</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="2561130636564014" type="System">
+                    <param id="0" name="Variable">scoreRouge</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="5220736492082889" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">45</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="9872387946448981" title="Attrappe poissons">
+            <sub-events>
+                <event-block disabled="1" sid="6711477215366691">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="4847064097190767" type="poissons">
+                            <param id="0" name="Object">bol</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="5647469202607924" type="bol">
+                            <param id="0" name="Instance variable">actif</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block disabled="1" sid="7251232082723095">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="9537116957453343" type="bol">
+                                    <param id="0" name="Animation">&quot;bleu&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block disabled="1" sid="2578891816341789">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="2053192969687716" type="poissons">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;normal&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="5805399993027602" type="System">
+                                            <param id="0" name="Variable">scoreBleu</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="6279330268295519" type="poissons" />
+                                    </actions>
+                                </event-block>
+                                <event-block disabled="1" sid="6848086645039178">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="3364961030859511" type="poissons">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;gold&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="6670498520048717" type="System">
+                                            <param id="0" name="Variable">scoreBleu</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="9246985591987087" type="poissons" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block disabled="1" sid="1663869956528021">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="8960680935850811" type="bol">
+                                    <param id="0" name="Animation">&quot;rouge&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block disabled="1" sid="3271921871962241">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="5183005382794354" type="poissons">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;normal&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="3049641735371774" type="System">
+                                            <param id="0" name="Variable">scoreRouge</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="398124084303606" type="poissons" />
+                                    </actions>
+                                </event-block>
+                                <event-block disabled="1" sid="3893137047751624">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="6481352430741217" type="poissons">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;gold&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="4876857845536674" type="System">
+                                            <param id="0" name="Variable">scoreRouge</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="5256722070618133" type="poissons" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8389067564322022">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="6748140899469154" type="System">
+                            <param id="0" name="Object">poissons</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="594578344484971" type="bol">
+                            <param id="0" name="Instance variable">actif</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="4671312255898581" type="poissons">
+                            <param id="0" name="Object">bol</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="6729075507429522" type="bol">
+                            <param id="0" name="Animation">&quot;bleu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="4315037935096219" type="System">
+                            <param id="0" name="Variable">scoreBleu</param>
+                            <param id="1" name="Value">poissons.valeur</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="3734745194948987" type="poissons" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1934433308892359">
+                            <conditions>
+                                <condition id="-14" inverted="1" name="Compare variable" sid="4845127720705151" type="System">
+                                    <param id="0" name="Variable">demo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;on&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="6177717030642328" type="Audio">
+                                    <param id="0" name="Audio file">fishing bleu</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;score bleu&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="1251600667649043">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="4957175074112595" type="System">
+                            <param id="0" name="Object">poissons</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="782780116501888" type="bol">
+                            <param id="0" name="Instance variable">actif</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="1138137136461884" type="poissons">
+                            <param id="0" name="Object">bol</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="6779913225535386" type="bol">
+                            <param id="0" name="Animation">&quot;rouge&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="427175105257288" type="System">
+                            <param id="0" name="Variable">scoreRouge</param>
+                            <param id="1" name="Value">poissons.valeur</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8376622525734689" type="poissons" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="829143763549311">
+                            <conditions>
+                                <condition id="-14" inverted="1" name="Compare variable" sid="4672479049994279" type="System">
+                                    <param id="0" name="Variable">demo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;on&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="4535114965146313" type="Audio">
+                                    <param id="0" name="Audio file">fishing rouge</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;score rouge&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8277449782273165">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="1778832498868088" type="poissonGold" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="4283410055113166" type="poissonGold">
+                            <param id="0" name="Object">petitsScores</param>
+                            <param id="1" name="Layer">&quot;gameplay&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="2816181018539418" type="petitsScores">
+                            <param id="0" name="Animation">&quot;plus3&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5176236237854751">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="3952834874625207" type="poisson" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="1952344361032324" type="poisson">
+                            <param id="0" name="Object">petitsScores</param>
+                            <param id="1" name="Layer">&quot;gameplay&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="6747527970062207" type="petitsScores">
+                            <param id="0" name="Animation">&quot;plus1&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="238797667178306">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="8980203374499647" type="petitsScores" />
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="1779890791947282" type="petitsScores">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="3257421487820924" type="petitsScores">
+                            <param id="0" name="Angle">-90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="3552471388435925" title="Controls">
+            <sub-events>
+                <event-group description="" sid="4884926420352446" title="Bleu">
+                    <sub-events>
+                        <event-block sid="6504883902163437">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="1434549846893219" type="Keyboard">
+                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="1161425125829217" type="bol">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;bleu gauche&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="5096557838897763" type="bol">
+                                    <param id="0" name="Instance variable">actif</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2360395992590507">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="2456185516136437" type="Keyboard">
+                                    <param id="0" name="Key">38 (Up arrow)</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="8669321322297772" type="bol">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;bleu milieu&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="2701371339265942" type="bol">
+                                    <param id="0" name="Instance variable">actif</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1967222921242246">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="9108392820304852" type="Keyboard">
+                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="1189286878733924" type="bol">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;bleu droit&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="8947342636038322" type="bol">
+                                    <param id="0" name="Instance variable">actif</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="2020955432813479" title="Rouge">
+                    <sub-events>
+                        <event-block sid="3734260258816003">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="5976857275275973" type="Keyboard">
+                                    <param id="0" name="Key">32 (Espace)</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="7824148214597082" type="bol">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;rouge gauche&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="9792116891959129" type="bol">
+                                    <param id="0" name="Instance variable">actif</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4590737442820924">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="2436802080631834" type="Keyboard">
+                                    <param id="0" name="Key">40 (Down arrow)</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="1465945622096038" type="bol">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;rouge milieu&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="7791044538928159" type="bol">
+                                    <param id="0" name="Instance variable">actif</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3463139498393076">
+                            <conditions>
+                                <condition id="0" name="On click" sid="1015665674878929" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="1080930731408296" type="bol">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;rouge droit&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="9729741905145705" type="bol">
+                                    <param id="0" name="Instance variable">actif</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="1594416982762858">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1190000408595702" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="711072444969612" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5670411841684743" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="8005160143852064" title="spawn poissons">
+            <sub-events>
+                <variable constant="0" name="position" sid="15736904082209" static="0" type="number">0</variable>
+                <event-block sid="6369894805616397">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="7473197120151462" type="System">
+                            <param id="0" name="Interval (seconds)">clamp(unlerp(-5, 40, timer), 0.3, 1)</param>
+                        </condition>
+                        <condition id="-14" inverted="1" name="Compare variable" sid="5647926407751329" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3117708058530455" type="System">
+                            <param id="0" name="Variable">position</param>
+                            <param id="1" name="Value">random(LayoutWidth/2)</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="5078861719320668" type="System">
+                            <param id="0" name="Object to create">poisson</param>
+                            <param id="1" name="Layer">&quot;gameplay&quot;</param>
+                            <param id="2" name="X">position</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="9027451388147593" type="System">
+                            <param id="0" name="Object to create">poisson</param>
+                            <param id="1" name="Layer">&quot;gameplay&quot;</param>
+                            <param id="2" name="X">position + (LayoutWidth/2)</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action disabled="1" id="14" name="Log" sid="3457216888881138" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">&quot;Timer: &quot; &amp; timer &amp; &quot;  Fréquence: &quot; &amp; clamp(unlerp(-5, 40, timer), 0.3, 1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5262289656802166">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="5621610873155627" type="System">
+                            <param id="0" name="Interval (seconds)">5</param>
+                        </condition>
+                        <condition id="-14" inverted="1" name="Compare variable" sid="5035473813907632" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6981477785775323" type="System">
+                            <param id="0" name="Variable">position</param>
+                            <param id="1" name="Value">random(LayoutWidth/2)</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="74555105431889" type="System">
+                            <param id="0" name="Object to create">poissonGold</param>
+                            <param id="1" name="Layer">&quot;gameplay&quot;</param>
+                            <param id="2" name="X">position</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="2971961978380348" type="System">
+                            <param id="0" name="Object to create">poissonGold</param>
+                            <param id="1" name="Layer">&quot;gameplay&quot;</param>
+                            <param id="2" name="X">position + (LayoutWidth/2)</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1177529136469288">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="6859768486603691" type="poisson" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4268656351281959" type="poisson">
+                            <param id="0" name="Animation">&quot;fish&quot; &amp; ceil(random(3))</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="662395088486614" type="poisson">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Value">&quot;normal&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="3543940263822598" type="poisson">
+                            <param id="0" name="Instance variable">valeur</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="507606129378468">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="3785641096950689" type="poissonGold" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3872269892215019" type="poissonGold">
+                            <param id="0" name="Animation">&quot;gold&quot; &amp; ceil(random(2))</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="8759845216811633" type="poissonGold">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Value">&quot;gold&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="2072293200902591" type="poissonGold">
+                            <param id="0" name="Instance variable">valeur</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8777592097138571">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="3369485532451532" type="poissons" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics2" id="9" name="Set angular velocity" sid="6509142108888289" type="poissons">
+                            <param id="0" name="Angular velocity">random(-180, 180)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1602466774820972" title="bols">
+            <sub-events>
+                <event-block sid="8003155631578866">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="9653179157149248" type="bol">
+                            <param id="0" name="Instance variable">actif</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="970198308578062" type="bol">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;AdjustHSL&quot;</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="4377315790390917" type="bol">
+                            <param id="0" name="Instance variable">actifTimer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6523438060624283">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="8771142688332519" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="5082639202396818" type="bol">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;HardLight&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="8226763481383125" type="bol">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;AdjustHSL&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="5059854600448649" type="bol">
+                            <param id="0" name="Instance variable">actifTimer</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5902883638262111">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3869534020425709" type="bol">
+                            <param id="0" name="Instance variable">actifTimer</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="8020801555155449" type="bol">
+                            <param id="0" name="Instance variable">actif</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6943364573461145" title="update HUD">
+            <sub-events>
+                <event-block sid="9898227060543814">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="63380738610376" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="338179897121369" type="scoreBleuTxt">
+                            <param id="0" name="Text">scoreBleu</param>
+                        </action>
+                        <action id="0" name="Set text" sid="8030331739447847" type="scoreRougeTxt">
+                            <param id="0" name="Text">scoreRouge</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="48518697117864">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="1433420809059479" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="3571469755556391" type="timerTxt">
+                                    <param id="0" name="Text">timer</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="305652764014704">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4467807473685648" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8404432049770357" type="bgGameOver">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="8600067897055223" title="timer">
+            <sub-events>
+                <event-block sid="8849464524866588">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="4313627808529301" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="9562566699793355" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5438468429679944">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4303067065456832" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-9" name="Set value" sid="3533500500588302" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6839966400150183">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="6996878217193537" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics2" id="15" name="Set velocity" sid="5703415242804196" type="poissons">
+                                    <param id="0" name="X component">random(-LayoutWidth, LayoutWidth)</param>
+                                    <param id="1" name="Y component">-1000</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="3606933643806694" title="debug">
+            <sub-events>
+                <event-block sid="3371543233972484">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="4791069025164081" type="Keyboard">
+                            <param id="0" name="Key">84 (T)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="411020175718274" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2977750343648373">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="3654100132931926" type="Keyboard">
+                            <param id="0" name="Key">82 (R)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="2204192326143577" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="406019579285702">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5463789619033546" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5837029652650545" type="System">
+                            <param id="0" name="Variable">demo</param>
+                            <param id="1" name="Value">&quot;on&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7961913981411391" title="demo">
+            <sub-events>
+                <event-block sid="9628284535144195">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4496880887114354" type="System">
+                            <param id="0" name="Variable">demo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="1161445957654801">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="2979007464545576" type="Keyboard">
+                                    <param id="0" name="Key">87 (W)</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="7203445385790495" type="Keyboard">
+                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="2608725173991505" type="Keyboard">
+                                    <param id="0" name="Key">38 (Up arrow)</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="9523621914287289" type="Keyboard">
+                                    <param id="0" name="Key">40 (Down arrow)</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="470020942996526" type="Keyboard">
+                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="3340557188535031" type="Keyboard">
+                                    <param id="0" name="Key">32 (Espace)</param>
+                                </condition>
+                                <condition id="0" name="On click" sid="9043925253139187" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="-2" name="Go to layout" sid="7615153237031371" type="System">
+                                    <param id="0" name="Layout">title</param>
+                                </action>
+                                <action id="0" name="Call function" sid="1158630776092068" type="Function">
+                                    <param id="0" name="Name">&quot;transition&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;title&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9594317765397101">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="8900649184393518" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="1285383853159776" type="demoTxt">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="34814313297106" type="demoTxt">
+                                    <param id="0" name="&apos;On&apos; time">0.7</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.7</param>
+                                    <param id="2" name="Duration">60</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1152546347250193">
+                            <conditions>
+                                <condition behavior="Fade" id="0" name="On fade-out finished" sid="2880285525633565" type="timer10Sec" />
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="-2" name="Go to layout" sid="8174017911809791" type="System">
+                                    <param id="0" name="Layout">title</param>
+                                </action>
+                                <action id="0" name="Call function" sid="2384313258861625" type="Function">
+                                    <param id="0" name="Name">&quot;transition&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;title&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6072605468473713">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="8232772596167546" type="poissons">
+                                    <param id="0" name="Object">bol</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="4091104710062794" type="bol">
+                                    <param id="0" name="Instance variable">actif</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="5103752038037081">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3040998597130752" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">-2</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="2547260223070361" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="1116137640826923" type="Function">
+                    <param id="0" name="Name">&quot;transition&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;score screen&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
