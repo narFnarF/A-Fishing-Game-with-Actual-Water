@@ -27,6 +27,14 @@ Bouton "GO" = W
 **bol de droite** = clic de souris
 
 
+### Autre
+**Fermer le jeu** = Alt+F4 (je sais, c'est pas génial!)
 
-## Note:
-On peut accéder à un mode de **debug** pour vérifier les connexions du Makey Makey en appuyant sur **"D"** à partir de l'écran principal.
+**Mode Debug** = D
+
+**Sortir du mode Debug** = D
+
+
+
+## Mode Debug
+Utile pour vérifier les connexions du Makey Makey. Ça affiche quelle touche a été appuyée en dernier (sauf le clic de souris, parce que c'est bogué, lol). Pour sortir du Debug, appuyer sur "D".
