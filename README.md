@@ -6,6 +6,9 @@ Fait avec Construct 2 (la vieille version d'origine était en Stencyl).
 
 Il faut Construct 2 pour voir le code source de manière lisible.
 
+Download: https://github.com/narFnarF/A-Fishing-Game-with-Actual-Water/releases
+
+
 
 ## Setup pour Makey Makey:
 Bouton "GO" = W
