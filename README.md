@@ -41,3 +41,13 @@ Bouton "GO" = W
 
 ## Mode Debug
 Utile pour vérifier les connexions du Makey Makey. Ça affiche quelle touche a été appuyée en dernier (sauf le clic de souris, parce que c'est bogué, lol). Pour sortir du Debug, appuyer sur "D".
+
+
+## Créateurs
+**narF** (design & code)
+* http://narF.ca
+* https://twitter.com/narF_snw
+
+
+**Kamylle** (art)
+* http://www.kamylle.com/
